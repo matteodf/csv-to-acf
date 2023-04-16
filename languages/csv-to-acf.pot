@@ -1,0 +1,228 @@
+# Copyright (C) 2023 Matteo De Filippis
+# This file is distributed under the GPL v3 and later.
+msgid ""
+msgstr ""
+"Project-Id-Version: CSV to ACF Importer 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/csv-to-acf\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-04-15T18:21:54+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: csv-to-acf\n"
+
+#. Plugin Name of the plugin
+#: admin/partials/csv-to-acf-admin-display.php:19
+msgid "CSV to ACF Importer"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://matteodefilippis.com/csv-to-acf/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Import CSV data into new pages creating proper ACF fields"
+msgstr ""
+
+#. Author of the plugin
+msgid "Matteo De Filippis"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://matteodefilippis.com/"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:22
+msgid "Version"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:29
+msgid "This plugin allows you to import data from a CSV file into a new post with properly configurated ACF fields."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:32
+msgid "To use the plugin, you must follow these rules:"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:36
+msgid "The first row must contain the field names, or at least an indication of the content of each column."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:39
+msgid "Each other row must contain the data to be imported."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:42
+msgid "The first column must contain the post title."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:45
+msgid "Image fields must contain the image URL. The URL must be linked to the image file, not to the page where the image is displayed."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:48
+msgid "When the image link does not provide the extension of the image, the plugin sets it to .jpg by default."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:53
+#: admin/partials/csv-to-acf-admin-display.php:92
+#: admin/partials/csv-to-acf-admin-display.php:140
+#: admin/partials/csv-to-acf-admin-display.php:167
+#: admin/partials/csv-to-acf-admin-display.php:220
+msgid "Important: "
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:55
+msgid "the plugin will not import data into existing posts."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:59
+msgid "Warning: "
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:61
+msgid "the plugin currently supports only the following field types: text, image, link, oembed"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:64
+msgid "Start importing"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:70
+msgid "First step: select the CSV file to be imported"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:76
+#: admin/partials/csv-to-acf-admin-display.php:122
+#: admin/partials/csv-to-acf-admin-display.php:149
+#: admin/partials/csv-to-acf-admin-display.php:184
+msgid "Go back"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:79
+#: admin/partials/csv-to-acf-admin-display.php:125
+msgid "Continue"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:85
+msgid "Second step: ACF Group settings"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:88
+msgid "Here you can set the ACF group settings. You can select the post type where the fields will be displayed and the title of the group."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:94
+msgid "the title of the group must be unique."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:99
+msgid "Post type"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:117
+msgid "ACF Group title"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:130
+msgid "Third step: ACF fields settings"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:133
+msgid "Here you can set the ACF fields settings. You can select the type of field, the label, the key and the name of the field."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:136
+msgid "You can click on the \"Autofill\" button to automatically fill the fields with the data from the CSV file."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:142
+msgid "the key of the field must be unique."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:145
+msgid "Autofill"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:152
+msgid "Create fields"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:157
+msgid "Fourth step: import data"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:160
+msgid "The fields have been created. Now you can import the data from the CSV file and create the posts."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:163
+msgid "You can select if you want to publish or draft the posts."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:169
+msgid "the plugin will not import data into existing posts. It will only create new posts."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:172
+msgid "Publish or draft the posts"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:176
+msgid "Publish"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:179
+msgid "Draft"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:187
+msgid "Import data"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:192
+msgid "Importing data..."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:195
+msgid "Please wait while the data is being imported. This may take a while depending on the size of the CSV file."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:200
+msgid "Import completed!"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:203
+msgid "The data has been imported successfully."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:206
+msgid "You can now go to the posts page and check the imported data."
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:209
+msgid "If you liked this plugin, please consider leaving a star on "
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:213
+msgid "If you have any questions or suggestions, please contact me on "
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:215
+msgid "my website"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:222
+msgid "This plugin is still in beta. If you find any bugs or have any suggestions, feel free to open an issue or a pull request on "
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:225
+msgid "Thank you for using this plugin!"
+msgstr ""
+
+#: admin/partials/csv-to-acf-admin-display.php:228
+msgid "Start over"
+msgstr ""

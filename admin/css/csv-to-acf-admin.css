@@ -1,0 +1,112 @@
+/**
+ * @link       https://matteodefilippis.com
+ * @copyright  Copyright (c)2023 Matteo De Filippis
+ * @since      0.1.0
+ *
+ * @package    Csv_To_Acf
+ * @subpackage Csv_To_Acf/admin/css
+ */
+
+:root {
+    --csv-to-acf-white: #f5f5f5;
+    --csv-to-acf-black: #000814;
+    --csv-to-acf-dark-blue: #001d3d;
+}
+
+.csv-to-acf {
+    padding: 40px;
+}
+
+.csv-to-acf,
+.csv-to-acf p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.csv-to-acf .subheadings {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.csv-to-acf h1,
+.csv-to-acf h2,
+.csv-to-acf h3,
+.csv-to-acf .headings,
+.csv-to-acf .headings p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.csv-to-acf ul {
+    list-style: disc;
+    margin-left: 1rem;
+}
+
+.main-cta,
+.secondary-cta {
+    background-color: transparent;
+    background-image: linear-gradient(
+        var(--csv-to-acf-dark-blue),
+        var(--csv-to-acf-dark-blue)
+    );
+    color: var(--csv-to-acf-white);
+    border: 1px solid var(--csv-to-acf-dark-blue);
+    padding: 1rem 2rem;
+    width: fit-content;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    transition: background-size 0.2s, color 0.3s;
+    cursor: pointer;
+}
+
+.secondary-cta {
+    background-size: 0% 100%;
+    color: var(--csv-to-acf-black);
+    background-position-x: left;
+}
+
+.secondary-cta:hover {
+    background-size: 100% 100%;
+    color: var(--csv-to-acf-white);
+}
+
+.main-cta:hover {
+    background-size: 0% 100%;
+    background-position-x: right;
+    color: var(--csv-to-acf-black);
+}
+
+.display-none {
+    display: none;
+}
+
+#preview_file {
+    margin: 1rem 0;
+    white-space: pre;
+    font-family: monospace;
+    padding: 1rem;
+    background-color: #eee;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+input[type="file"],
+#step-four select {
+    margin-bottom: 1rem;
+}
+
+.description,
+.fields,
+#acf_fields {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+}
