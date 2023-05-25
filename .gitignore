@@ -1,0 +1,14 @@
+# IDE specific files
+.vscode/
+.idea/
+
+# Mac specific files
+.DS_Store
+
+# Logs and backups
+*.log
+*.bak
+*.sql
+
+# ACF pro stubs
+acf-pro-stubs.php

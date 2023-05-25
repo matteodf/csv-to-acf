@@ -11,9 +11,12 @@ let data = [];
 let headers = [];
 
 function switchSection(previous, next) {
-    previous.classList.add("display-none");
-    next.classList.remove("display-none");
+    if (previous && next) {
+        previous.classList.add("display-none");
+        next.classList.remove("display-none");
+    }
 }
+
 const acfFieldTypes = ["text", "image", "oembed", "link"];
 
 // Initiate the import process when the button is clicked
@@ -291,7 +294,7 @@ importDataButton.addEventListener("click", function (e) {
             data: JSON.stringify(data),
         },
         function (response) {
-            if (response == "ACF is not installed") {
+            if (response == "ACF is not properly installed") {
                 alert("ACF is not installed");
             } else if (response == "Missing parameters") {
                 alert("Missing parameters");
